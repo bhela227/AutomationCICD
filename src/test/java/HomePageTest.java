@@ -21,7 +21,8 @@ public class HomePageTest {
 
     @AfterTest(alwaysRun = true)
     public void closeDriver() {
-        driver.quit();
+
+        //driver.quit();
     }
 
     @Test
@@ -46,6 +47,12 @@ public class HomePageTest {
     public void raduioButtonf(){
         hp.femaleRadioButton.click();
         Assert.assertTrue(hp.femaleRadioButton.isSelected());
+    }
+
+    @Test
+    public void raduioButtonm(){
+        hp.femaleRadioButton.click();
+        Assert.assertTrue(hp.maleRadioButton.isSelected());
     }
 
 }
