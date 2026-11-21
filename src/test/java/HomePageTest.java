@@ -27,6 +27,7 @@ public class HomePageTest {
 
     @Test
     public void fNameTest() {
+        System.out.println("fNameTest");
         String expected = "Harpreet";
         hp.fName.clear();
         hp.fName.sendKeys(expected);
@@ -36,6 +37,7 @@ public class HomePageTest {
 
     @Test(retryAnalyzer = Retry.class, groups = {"smoke"})
     public void lNameTest() {
+        System.out.println("lNameTest");
         String expected = "Singh";
         hp.lName.clear();
         hp.lName.sendKeys("Singh");
@@ -45,13 +47,15 @@ public class HomePageTest {
 
     @Test
     public void raduioButtonf(){
+        System.out.println("raduioButtonf");
         hp.femaleRadioButton.click();
         Assert.assertTrue(hp.femaleRadioButton.isSelected());
     }
 
     @Test
     public void raduioButtonm(){
-        hp.femaleRadioButton.click();
+        System.out.println("raduioButtonm");
+        hp.maleRadioButton.click();
         Assert.assertTrue(hp.maleRadioButton.isSelected());
     }
 
