@@ -42,4 +42,10 @@ public class HomePageTest {
         Assert.assertEquals(actual, expected);
     }
 
+    @Test
+    public void raduioButtonf(){
+        hp.femaleRadioButton.click();
+        Assert.assertTrue(hp.femaleRadioButton.isSelected());
+    }
+
 }
