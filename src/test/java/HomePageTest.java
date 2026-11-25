@@ -29,6 +29,7 @@ public class HomePageTest {
     public void fNameTest() {
         System.out.println("fNameTest");
         String expected = "Harpreet";
+        System.out.println("add this line to chcek auto run after push to github");
         hp.fName.clear();
         hp.fName.sendKeys(expected);
         String actual = hp.fName.getAttribute("value");
